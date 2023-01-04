@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: "Roboto", sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url("./bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    opacity: 0.4;
+}
+
+.weather{
+    z-index: 2;
+    /* background-color: white; */
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.weather > div {
+    margin: 0.625rem;
+}
+
+.weather1{
+    font-size: 4rem;
+}
+
+.weather p{
+    font-size: 2rem;
+}
+
+.weather span{
+    font-size: 0.75rem;
+}
+
+.weather3 span{
+    margin: 0.3rem;
+}
+
+.weather3 img{
+    width: 2rem;
+}
+
+nav{
+    height: 100px;
+    width: 100%;
+    padding: 1rem 0;
+    border-radius: 100px 100px 0 0;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.18);
+    position: absolute;
+    bottom: 0%;
+    background-color: rgba(180, 177, 177, 0.075);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav form{
+    width: 70%;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+
+}
+
+.searchField{
+    font-size: 1.2rem;
+    outline: none;
+    color: white;
+    background-color: transparent;
+    padding: 1rem 0;
+    border: none;
+    border-bottom: 2px solid white;
+    width: 98%;
+}
+
+nav form button{
+    background-color: rgb(255, 190, 190);
+    border-radius: 0 25px 25px 0;
+    font-size: 1.1rem;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+
